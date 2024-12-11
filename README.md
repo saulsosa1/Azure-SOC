@@ -42,9 +42,15 @@ The goal of this phase was to create an easily discoverable environment to entic
 ## Architecture After Hardening / Security Controls
 ![Architecture After Hardening _ Security Controls](https://github.com/user-attachments/assets/a0a04c20-2a52-4a45-9dc6-ea088dfcaeb5)
 
-For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
+During this phase, the environment was hardened and security controls were implemented to ensure compliance with NIST SP 800-53 Revision 5 SC-7(3).
 
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
+- **Network Security Groups (NSGs):** NSGs were updated to deny all traffic by default, permitting only specific connections from the admin workstation's IP address. Only authorized traffic from trusted sources was allowed access to the subnet and virtual machines.
+
+- **Built-in Firewalls:** The built-in firewalls on the Virtual Machines were configured to allow only necessary inbound traffic, effectively reducing the attack surface.
+
+- **Private Endpoints:** Azure Key Vault and Storage Accounts were transitioned from public to Private Endpoints, restricting access to resources within the Virtual Network.
+
+These security measures significantly enhanced the security posture of the environment without hindering the functionality for legitimate operations.
 
 ## Attack Maps Before Hardening / Security Controls
 ![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
