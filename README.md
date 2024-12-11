@@ -55,8 +55,11 @@ These security measures significantly enhanced the security posture of the envir
 ## Attack Maps Before Hardening / Security Controls
 **This attack map shows inbound traffic allowed through NSGs before hardening.**
 ![(Before)-nsg-malicious-allowed-in](https://github.com/user-attachments/assets/f5a438a5-e7f1-48a6-9922-ba4781fadad0)
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+**This attack map shows brute force attempts targeting a Linux VM.**
+![(Before)-syslog-ssh-auth-fail](https://github.com/user-attachments/assets/d5de6435-b486-4e81-86a4-cfc759ac934e)
+**This attack map shows brute force attempts targeting a Windows VM.**
+![(Before)-windows-rdp-smb-auth-fail](https://github.com/user-attachments/assets/dbbdf0d7-94ee-4ff9-ba7a-1b9d7ed21754)
+
 
 ## Metrics Before Hardening / Security Controls
 
