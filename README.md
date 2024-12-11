@@ -34,21 +34,13 @@ In this project, I deployed a honeynet in Azure to simulate an unsecure environm
 ## Architecture Before Hardening / Security Controls
 ![Architecture Before Hardening _ Security Controls](https://github.com/user-attachments/assets/e1d5f5ed-c28c-4ad7-9cdb-e5b3ed12b015)
 
+The "BEFORE" configuration was designed to simulate an unprotected environment, deliberately exposing the virtual resources to the public internet. Virtual Machines had their Network Security Groups (NSGs) configured to allow unrestricted inbound and outbound traffic. Built-in firewalls were disabled to maximize the attack surface and invite malicious actors to exploit vulnerabilities. Azure resources like the Key Vault and Storage Account were deployed with public endpoints, making them accessible from any internet-based client. These measures ensured the environment would attract real-world cyberattacks, allowing for the collection of security event data via Log Analytics Workspace and monitoring in Microsoft Sentinel.
+
+The goal of this phase was to create an easily discoverable environment to entice real-world attacks from malicious actors. The logs captured during this stage were visualized through custom Sentinel workbooks to analyze malicious traffic, track IP origins, and identify attack patterns.
 
 
 ## Architecture After Hardening / Security Controls
 ![Architecture After Hardening _ Security Controls](https://github.com/user-attachments/assets/a0a04c20-2a52-4a45-9dc6-ea088dfcaeb5)
-
-
-The architecture of the mini honeynet in Azure consists of the following components:
-
-- Virtual Network (VNet)
-- Network Security Group (NSG)
-- Virtual Machines (2 windows, 1 linux)
-- Log Analytics Workspace
-- Azure Key Vault
-- Azure Storage Account
-- Microsoft Sentinel
 
 For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
 
