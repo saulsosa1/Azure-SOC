@@ -14,6 +14,23 @@ In this project, I deployed a honeynet in Azure to simulate an unsecure environm
 - SecurityIncident (Incidents created by Sentinel)
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
+## Technologies, Azure Components, and Regulations Employed
+
+- Azure Virtual Network (VNet)
+- Azure Network Security Groups (NSG)
+- Virtual Machines (2 Windows VMs, 1 Linux VM)
+- Log Analytics Workspace with Kusto Query Language (KQL) Queries
+- Azure Key Vault for Secure Secrets Management
+- Azure Storage Account for Data Storage
+- Microsoft Sentinel for Security Information and Event Management (SIEM)
+- Microsoft Defender for Cloud to Protect Cloud Resources
+- Windows Remote Desktop for Remote Access
+- Command Line Interface (CLI) for System Management
+- PowerShell for Automation and Configuration Management
+- NIST SP 800-53 Revision 5 for Security Controls
+- NIST SP 800-61 Revision 2 for Incident Handling Guidance
+
+
 ## Architecture Before Hardening / Security Controls
 ![Architecture Before Hardening _ Security Controls](https://github.com/user-attachments/assets/e1d5f5ed-c28c-4ad7-9cdb-e5b3ed12b015)
 
