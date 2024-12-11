@@ -59,6 +59,8 @@ These security measures significantly enhanced the security posture of the envir
 ![(Before)-syslog-ssh-auth-fail](https://github.com/user-attachments/assets/d5de6435-b486-4e81-86a4-cfc759ac934e)
 **This attack map shows brute force attempts targeting a Windows VM.**
 ![(Before)-windows-rdp-smb-auth-fail](https://github.com/user-attachments/assets/dbbdf0d7-94ee-4ff9-ba7a-1b9d7ed21754)
+**This attack map shows attempts to brute force into the SQL server.**
+![(Before)-mssql-auth-fail](https://github.com/user-attachments/assets/76a58758-6c03-4903-a1dc-0a2e3bde8809)
 
 
 ## Metrics Before Hardening / Security Controls
