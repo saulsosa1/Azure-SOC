@@ -53,7 +53,8 @@ During this phase, the environment was hardened and security controls were imple
 These security measures significantly enhanced the security posture of the environment without hindering the functionality for legitimate operations.
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
+**This attack map shows inbound traffic allowed through NSGs before hardening.**
+![(Before)-nsg-malicious-allowed-in](https://github.com/user-attachments/assets/f5a438a5-e7f1-48a6-9922-ba4781fadad0)
 ![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
 ![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
 
