@@ -27,7 +27,7 @@ In this project, I deployed a honeynet in Azure to simulate an unsecure environm
 - Windows Remote Desktop for Remote Access
 - Command Line Interface (CLI) for System Management
 - PowerShell for Automation and Configuration Management
-- NIST SP 800-53 Revision 5 for Security Controls
+- <a href="https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"> NIST SP 800-53 Revision 5</a> for Security Controls
 - NIST SP 800-61 Revision 2 for Incident Handling Guidance
 
 
