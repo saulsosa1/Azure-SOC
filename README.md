@@ -28,7 +28,7 @@ In this project, I deployed a honeynet in Azure to simulate an unsecure environm
 - Command Line Interface (CLI) for System Management
 - PowerShell for Automation and Configuration Management
 - <a href="https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"> NIST SP 800-53 Revision 5</a> for Security Controls
-- NIST SP 800-61 Revision 2 for Incident Handling Guidance
+- <a href="https://csrc.nist.gov/pubs/sp/800/61/r2/final"> NIST SP 800-61 Revision 2</a> for Incident Handling Guidance
 
 
 ## Architecture Before Hardening / Security Controls
