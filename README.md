@@ -6,7 +6,7 @@
 
 ## Introduction
 
-In this project, I deployed a honeynet in Azure to simulate an insecure environment and monitor malicious activity. Logs from the environment were ingested into a Log Analytics Workspace and analyzed in Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. Security metrics were collected during a 24-hour insecure period. After implementing security hardening measures, I ran the environment for another 24 hours to collect metrics in its secured configuration. Metrics measured include:
+In this project, I deployed a honeynet in Azure to simulate an insecure environment and monitor malicious activity. Logs from the environment were ingested into a Log Analytics workspace and analyzed in Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. Security metrics were collected during a 24-hour insecure period. After implementing security hardening measures, I ran the environment for another 24 hours to collect metrics in its secured configuration. Metrics measured include:
 
 - SecurityEvent (Windows Event Logs)
 - Syslog (Linux Event Logs)
@@ -34,7 +34,7 @@ In this project, I deployed a honeynet in Azure to simulate an insecure environm
 ## Architecture Before Hardening / Security Controls
 ![Architecture Before Hardening _ Security Controls](https://github.com/user-attachments/assets/e1d5f5ed-c28c-4ad7-9cdb-e5b3ed12b015)
 
-The "BEFORE" configuration was designed to simulate an unprotected environment, deliberately exposing the virtual resources to the public internet. Virtual Machines had their Network Security Groups (NSGs) configured to allow unrestricted inbound and outbound traffic. Built-in firewalls were disabled to maximize the attack surface and invite malicious actors to exploit vulnerabilities. Azure resources like the Key Vault and Storage Account were deployed with public endpoints, making them accessible from any internet-based client. These measures ensured the environment would attract real-world cyberattacks, allowing for the collection of security event data via Log Analytics Workspace and monitoring in Microsoft Sentinel.
+The "BEFORE" configuration was designed to simulate an unprotected environment, deliberately exposing the virtual resources to the public internet. Virtual Machines had their Network Security Groups (NSGs) configured to allow unrestricted inbound and outbound traffic. Built-in firewalls were disabled to maximize the attack surface and invite malicious actors to exploit vulnerabilities. Azure resources like the Key Vault and Storage Account were deployed with public endpoints, making them accessible from any internet-based client. These measures ensured the environment would attract real-world cyberattacks, allowing for the collection of security event data via Log Analytics workspace and monitoring in Microsoft Sentinel.
 
 The goal of this phase was to create an easily discoverable environment to entice real-world attacks from malicious actors. The logs captured during this stage were visualized through custom Sentinel workbooks to analyze malicious traffic, track IP origins, and identify attack patterns.
 
