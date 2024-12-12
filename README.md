@@ -99,6 +99,16 @@ Stop Time:	12-05-2024 1:15:40 PM
 | SecurityIncident (Sentinel Incidents)                              | 0
 | AzureNetworkAnalytics_CL (Malicious Inbound Traffic Allowed by NSG)| 0
 
+## Impact of Security Hardening
+
+| Metric                                                             | Percent Change
+| ------------------------------------------------------------------ | -----
+| SecurityEvent (Windows VMs)                                        | -98.82%
+| Syslog (Linux VMs)                                                 | -100.00%
+| SecurityAlert (Microsoft Defender for Cloud)                       | 0%
+| SecurityIncident (Sentinel Incidents)                              | -100.00%
+| AzureNetworkAnalytics_CL (Malicious Inbound Traffic Allowed by NSG)| -100.00%
+
 ## Conclusion
 
 In this project, a mini honeynet was constructed in Microsoft Azure and log sources were integrated into a Log Analytics workspace. Microsoft Sentinel was employed to trigger alerts and create incidents based on the ingested logs. Additionally, metrics were measured in the insecure environment before security controls were applied, and then again after implementing security measures. It is noteworthy that the number of security events and incidents were drastically reduced after the security controls were applied, demonstrating their effectiveness.
