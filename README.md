@@ -79,23 +79,25 @@ Stop Time: 12-02-2024 3:52:07 PM
 | SecurityIncident (Sentinel Incidents)                              | 261
 | AzureNetworkAnalytics_CL (Malicious Inbound Traffic Allowed by NSG)| 3605
 
-## Attack Maps Before Hardening / Security Controls
+## Attack Maps After Hardening / Security Controls
 
 ```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
 
 ## Metrics After Hardening / Security Controls
 
-The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2023-03-18 15:37
-Stop Time	2023-03-19 15:37
+The following table shows the metrics measured over a 24-hour period after applying security hardening measures.
 
-| Metric                   | Count
-| ------------------------ | -----
-| SecurityEvent            | 8778
-| Syslog                   | 25
-| SecurityAlert            | 0
-| SecurityIncident         | 0
-| AzureNetworkAnalytics_CL | 0
+Start Time: 12-04-2024 1:15:40 PM
+
+Stop Time:	12-05-2024 1:15:40 PM
+
+| Metric                                                             | Count
+| ------------------------------------------------------------------ | -----
+| SecurityEvent (Windows VMs)                                        | 687
+| Syslog (Linux VMs)                                                 | 0
+| SecurityAlert (Microsoft Defender for Cloud)                       | 0
+| SecurityIncident (Sentinel Incidents)                              | 0
+| AzureNetworkAnalytics_CL (Malicious Inbound Traffic Allowed by NSG)| 0
 
 ## Conclusion
 
