@@ -67,9 +67,9 @@ These security measures significantly enhanced the security posture of the envir
 
 The following table shows the metrics measured in the unsecure environment over the initial 24 hour period.
 
-Start Time: 2023-03-15 17:04:29
+Start Time: 12-01-2024 3:52:07 PM
 
-Stop Time: 2023-03-16 17:04:29
+Stop Time: 12-02-2024 3:52:07 PM
 
 | Metric                                                             | Count
 | ------------------------------------------------------------------ | -----
