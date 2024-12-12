@@ -71,13 +71,13 @@ Start Time: 2023-03-15 17:04:29
 
 Stop Time: 2023-03-16 17:04:29
 
-| Metric                   | Count
-| ------------------------ | -----
-| SecurityEvent            | 58286
-| Syslog                   | 7230
-| SecurityAlert            | 0
-| SecurityIncident         | 261
-| AzureNetworkAnalytics_CL | 3605
+| Metric                                                             | Count
+| ------------------------------------------------------------------ | -----
+| SecurityEvent (Windows VMs)                                        | 58286
+| Syslog (Linux VMs)                                                 | 7230
+| SecurityAlert (Microsoft Defender for Cloud)                       | 0
+| SecurityIncident (Sentinel Incidents)                              | 261
+| AzureNetworkAnalytics_CL (Malicious Inbound Traffic Allowed by NSG)| 3605
 
 ## Attack Maps Before Hardening / Security Controls
 
