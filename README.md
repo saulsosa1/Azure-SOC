@@ -65,9 +65,11 @@ These security measures significantly enhanced the security posture of the envir
 
 ## Metrics Before Hardening / Security Controls
 
-The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-03-15 17:04:29
-Stop Time 2023-03-16 17:04:29
+The following table shows the metrics measured in the unsecure environment over the initial 24 hour period.
+
+Start Time: 2023-03-15 17:04:29
+
+Stop Time: 2023-03-16 17:04:29
 
 | Metric                   | Count
 | ------------------------ | -----
