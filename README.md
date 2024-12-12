@@ -6,7 +6,7 @@
 
 ## Introduction
 
-In this project, I deployed a honeynet in Azure to simulate an unsecure environment and monitor malicious activity. Logs from the environment were ingested into a Log Analytics Workspace and analyzed in Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. Security metrics were collected during a 24-hour unsecure period. After implementing security hardening measures, I ran the environment for another 24 hours to collect metrics in its secured configuration. Metrics measured include:
+In this project, I deployed a honeynet in Azure to simulate an insecure environment and monitor malicious activity. Logs from the environment were ingested into a Log Analytics Workspace and analyzed in Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. Security metrics were collected during a 24-hour insecure period. After implementing security hardening measures, I ran the environment for another 24 hours to collect metrics in its secured configuration. Metrics measured include:
 
 - SecurityEvent (Windows Event Logs)
 - Syslog (Linux Event Logs)
@@ -65,7 +65,7 @@ These security measures significantly enhanced the security posture of the envir
 
 ## Metrics Before Hardening / Security Controls
 
-The following table shows the metrics measured in the unsecure environment over the initial 24 hour period.
+The following table shows the metrics measured in the insecure environment over the initial 24 hour period.
 
 Start Time: 12-01-2024 3:52:07 PM
 
